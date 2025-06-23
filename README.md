@@ -17,6 +17,7 @@ A calculadora possui as seguintes funcionalidades:
     -   Igual (=)
     -   Limpar (C)
     -   Vírgula (,) para números decimais
+    -   Backspace (⌫) para apagar dígitos um a um
 
 ## Como usar
 
@@ -31,3 +32,7 @@ A calculadora possui as seguintes funcionalidades:
 -   `index.html` - Estrutura HTML da calculadora
 -   `styles.css` - Estilos CSS para a interface
 -   `script.js` - Funcionalidades JavaScript para os cálculos
+
+## Screenshot
+
+![Screenshot da Calculadora](./assets/calculator-screenshot.png)
