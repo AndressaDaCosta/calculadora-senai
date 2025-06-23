@@ -30,3 +30,4 @@ A calculadora possui as seguintes funcionalidades:
 
 -   `index.html` - Estrutura HTML da calculadora
 -   `styles.css` - Estilos CSS para a interface
+-   `script.js` - Funcionalidades JavaScript para os cálculos
