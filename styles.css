@@ -74,5 +74,14 @@ body {
 
 /* Ajustando o layout dos botões */
 #equals {
-	grid-column: span 4;
+	grid-column: span 3;
+}
+
+#backspace {
+	background-color: #a0a0a0;
+	color: #333;
+}
+
+#backspace:hover {
+	background-color: #bdbdbd;
 }

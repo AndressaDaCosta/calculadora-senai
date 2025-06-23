@@ -69,6 +69,16 @@ document.addEventListener('DOMContentLoaded', function () {
 		waitingForSecondOperand = false;
 	}
 
+	function backspace() {
+		if (waitingForSecondOperand) {
+			return;
+		}
+
+		// Remove o último caractere
+		currentInput =
+			currentInput.length > 1 ? currentInput.slice(0, -1) : '0';
+	}
+
 	buttons.forEach((button) => {
 		button.addEventListener('click', function () {
 			const value = this.textContent.trim();
@@ -107,6 +117,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			// Caso seja limpar (C)
 			else if (value === 'C') {
 				resetCalculator();
+				updateDisplay();
+			}
+
+			// Caso seja backspace (⌫)
+			else if (value === '⌫') {
+				backspace();
 				updateDisplay();
 			}
 		});
